@@ -1,0 +1,53 @@
+Arguments: 
+  /usr/local/Cellar/node/10.11.0/bin/node /Users/kielan/.yarn/bin/yarn.js
+
+PATH: 
+  /Users/kielan/.yarn/bin:/Users/kielan/.config/yarn/global/node_modules/.bin:/Users/kielan/google-cloud-sdk/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/Users/kielan/Documents/golang_projects/bin:/Users/kielan/go_appengine:/Users/kielan/.cask/bin:/Users/kielan/redis:/Users/kielan/mongodb-osx/bin:/Users/kielan/.npm/npm/2.7.5/package2/bin/npm:/Users/kielan/.npm/bin-build:/Users/kielan/Downloads/mongodb-osx/bin:/usr/local/sbin:/Users/kielan/.npm:/Users/kielan/Downloads/mongodb-osx/bin:/usr/local/heroku/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/X11/bin:/usr/local/git/bin:/usr/local/bin/:/Users/kielan/Library/Android/sdk/tools:/Users/kielan/Library/Android/sdk/tools/bin:/Users/kielan/Library/Android/sdk/platform-tools:/Users/kielan/Library/Android/sdk/emulator
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  10.11.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/kielan/Documents/Programming/blog.kielanlemons.com-cli/package.json: Unexpected token } in JSON at position 414
+      at JSON.parse (<anonymous>)
+      at /Users/kielan/.yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/kielan/.yarn/lib/cli.js:304:30)
+      at /Users/kielan/.yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "blog.kielanlemons.com-cli",
+    "version": "1.0.0",
+    "description": "clitool for managing contentful blog",
+    "main": "index.js",
+    "author": "kielan lemons",
+    "license": "MIT",
+    "private": false,
+    "dependencies": {
+      "@babel/code-frame": "^7.0.0",
+      "@babel/runtime": "^7.0.0",
+      "bluebird": "^3.5.0",
+      "lodash": "^4.17.10",
+      "yargs": "^12.0.5",
+      "contentful-management": "5.2.1",
+    },
+    "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "babel-preset-gatsby-package": "^0.1.4",
+    "cross-env": "^5.1.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

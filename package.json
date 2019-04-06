@@ -1,0 +1,44 @@
+{
+  "name": "blog.kielanlemons.com-cli",
+  "version": "1.0.0",
+  "description": "clitool for managing contentful blog",
+  "main": "lib/index.js",
+  "author": "kielan lemons",
+  "bin": {
+    "gatsby": "lib/index.js"
+  },
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@babel/code-frame": "^7.0.0",
+    "@babel/runtime": "^7.0.0",
+    "bluebird": "^3.5.0",
+    "common-tags": "^1.4.0",
+    "convert-hrtime": "^2.0.0",
+    "envinfo": "^5.8.1",
+    "fs-exists-cached": "^1.0.0",
+    "fs-extra": "^4.0.1",
+    "gatsby-telemetry": "^1.0.5",
+    "lodash": "^4.17.10",
+    "contentful-management": "5.2.1",
+    "opentracing": "^0.14.3",
+    "pretty-error": "^2.1.1",
+    "resolve-cwd": "^2.0.0",
+    "source-map": "^0.5.7",
+    "stack-trace": "^0.0.10",
+    "update-notifier": "^2.3.0",
+    "yargs": "^12.0.5",
+    "yurnalist": "^1.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "babel-preset-gatsby-package": "^0.1.4",
+    "cross-env": "^5.1.4"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib --ignore **/__tests__",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir lib --ignore **/__tests__"
+  }
+}
